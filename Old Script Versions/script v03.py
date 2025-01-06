@@ -22,7 +22,7 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.tls_set(ca_certs='./AmazonRootCA1.pem', certfile='./certificate.pem.crt', keyfile='./private.pem.key', tls_version=ssl.PROTOCOL_SSLv23)
 client.tls_insecure_set(False)
-client.connect("a1a1qi25dvl0jn-ats.iot.us-east-1.amazonaws.com", 8883, 60)
+client.connect("link.amazonaws.com", 8883, 60)
 
 # Publish data to MQTT topic
 def publishData(txt):
